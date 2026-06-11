@@ -1,1 +1,9 @@
+# riot.txt — vérification de domaine Riot Games
+#
+# Riot te donnera (dans le portail développeur, à l'étape de validation du
+# produit / du domaine) un CODE DE VÉRIFICATION unique.
+# Remplace TOUT le contenu de ce fichier par cette seule ligne de code,
+# puis redéploie. Riot lira https://corvee-paper.fr/riot.txt pour valider.
+#
+# Tant qu'il n'y a pas de code, ce fichier ne sert à rien (mais ne gêne pas).
 REMPLACE-CETTE-LIGNE-PAR-LE-CODE-DE-VERIFICATION-RIOT
