@@ -99,6 +99,7 @@ header.nav {
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
   box-shadow: 0 30px 80px rgba(0,0,0,0.5); overflow: hidden;
 }
+.mock-shot { display: block; width: 100%; height: auto; }
 .mock-bar { display: flex; align-items: center; gap: 7px; padding: 12px 14px; border-bottom: 1px solid var(--line); background: var(--bg-2); }
 .mock-bar i { width: 10px; height: 10px; border-radius: 50%; background: #2c303b; display: block; }
 .mock-bar .ttl { margin-left: 10px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 1px; }
@@ -132,6 +133,20 @@ section { padding: 72px 0; }
 .feature h3 { font-family: 'Cinzel', serif; font-size: 19px; font-weight: 700; margin-bottom: 8px; }
 .feature p { color: var(--muted); font-size: 15px; }
 
+/* ---------- Screenshots gallery ---------- */
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.shot {
+  margin: 0; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.shot:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+.shot img { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--line); }
+.shot figcaption {
+  padding: 12px 14px; font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: 0.5px; color: var(--muted);
+}
+
 /* ---------- CTA band ---------- */
 .band { text-align: center; background: linear-gradient(180deg, transparent, rgba(200,170,110,0.05)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .band h2 { font-family: 'Cinzel', serif; font-size: 32px; font-weight: 800; margin-bottom: 12px; }
@@ -157,5 +172,6 @@ footer { padding: 48px 0 64px; border-top: 1px solid var(--line); }
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
   .hero h1 { font-size: 40px; }
   .features { grid-template-columns: 1fr; }
+  .shots { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
